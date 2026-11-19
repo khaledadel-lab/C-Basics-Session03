@@ -126,13 +126,22 @@ namespace Route_course
 
             #region Question14
             //14-Write a do-while loop that prints "Checking book..." exactly 3 times. 
-            int count = 0;
-            do
+            //int count = 0;
+            //do
+            //{
+            //    Console.WriteLine("Checking book...");
+            //    count++;
+            //}
+            //while (count<3);
+            #endregion
+
+            #region Question15
+            //15-Using the same books array, use a foreach loop to print every book title. 
+            string[] books = { "clean code", "the pragmatic programmer", "refactoring" };
+            foreach (string book in books)
             {
-                Console.WriteLine("Checking book...");
-                count++;
+                Console.WriteLine(book);
             }
-            while (count<3);
             #endregion
         }
     }
