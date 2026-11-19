@@ -29,6 +29,12 @@ namespace Route_course
             StringBuilder sb = new StringBuilder();
             sb.Append("Book List");
             sb.Append(" - updated");
+            //Console.WriteLine(sb);
+            #endregion
+
+            #region Question04
+            //4-Using the StringBuilder from the question above, use Replace() to change "Book List" into "Library". Print the result. 
+            sb.Replace("Book List" , "Library");
             Console.WriteLine(sb);
             #endregion
         }
