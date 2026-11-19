@@ -145,15 +145,28 @@ namespace Route_course
             #endregion
 
             #region Question16
-            //16-Using the same books array, loop through it and print each title, but stop completely (break) once you reach "Refactoring". 
+            ////16-Using the same books array, loop through it and print each title, but stop completely (break) once you reach "Refactoring". 
+            //foreach (string book in books)
+            //{
+            //    if (book == "refactoring")
+            //    {
+            //        break;
+            //    }
+            //    Console.WriteLine(book);
+            //}
+            #endregion
+
+            #region Queation17
+            //17-Using the same books array, print every title except "The Pragmatic Programmer" (skip it with continue, don't stop the loop). 
             foreach (string book in books)
             {
-                if (book == "refactoring")
+                if (book == "the pragmatic programmer")
                 {
-                    break;
+                    continue;
                 }
                 Console.WriteLine(book);
             }
+            
             #endregion
         }
     }
