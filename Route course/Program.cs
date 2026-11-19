@@ -39,16 +39,22 @@ namespace Route_course
             #endregion
 
             #region Question05
-            //5-Given string title = "Clean Code"; and int pages = 464;, build the sentence "Book: Clean Code, Pages: 464" using the + operator. 
+            ////5-Given string title = "Clean Code"; and int pages = 464;, build the sentence "Book: Clean Code, Pages: 464" using the + operator. 
             string title = "Clean Code";
             int pages = 464;
-            //string sentence = "Book: " + title + ", pages:" + pages;
-            //Console.WriteLine(sentence);
+            ////string sentence = "Book: " + title + ", pages:" + pages;
+            ////Console.WriteLine(sentence);
             #endregion
 
             #region Question06
             //6-Build the same sentence as above, but using string interpolation ($"..."). 
-            string sentence = $"Book: {title}, pages: {pages}";
+            //string sentence = $"Book: {title}, pages: {pages}";
+            //Console.WriteLine(sentence);
+            #endregion
+
+            #region Question07
+            //7-Build the same sentence again, but using string.Format().
+            string sentence = string.Format("Book: {0}, pages:{1}", title, pages);
             Console.WriteLine(sentence);
             #endregion
         }
