@@ -40,8 +40,8 @@ namespace Route_course
 
             #region Question05
             ////5-Given string title = "Clean Code"; and int pages = 464;, build the sentence "Book: Clean Code, Pages: 464" using the + operator. 
-            string title = "Clean Code";
-            int pages = 464;
+            //string title = "Clean Code";
+            //int pages = 464;
             ////string sentence = "Book: " + title + ", pages:" + pages;
             ////Console.WriteLine(sentence);
             #endregion
@@ -53,9 +53,20 @@ namespace Route_course
             #endregion
 
             #region Question07
-            //7-Build the same sentence again, but using string.Format().
-            string sentence = string.Format("Book: {0}, pages:{1}", title, pages);
-            Console.WriteLine(sentence);
+            ////7-Build the same sentence again, but using string.Format().
+            //string sentence = string.Format("Book: {0}, pages:{1}", title, pages);
+            //Console.WriteLine(sentence);
+            #endregion
+
+            #region Queation08
+            //8-Given int pages = 464;, write an if / else statement that prints "Long Book" if pages is greater than 300, otherwise prints "Short Book". 
+            int pages = 464;
+            if (pages>300)
+            {
+                Console.WriteLine("long book");
+            }
+            else
+                Console.WriteLine("short book");
             #endregion
         }
     }
