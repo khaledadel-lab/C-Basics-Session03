@@ -137,7 +137,7 @@ namespace Route_course
 
             #region Question15
             ////15-Using the same books array, use a foreach loop to print every book title. 
-            string[] books = { "clean code", "the pragmatic programmer", "refactoring" };
+            //string[] books = { "clean code", "the pragmatic programmer", "refactoring" };
             //foreach (string book in books)
             //{
             //    Console.WriteLine(book);
@@ -157,16 +157,33 @@ namespace Route_course
             #endregion
 
             #region Queation17
-            //17-Using the same books array, print every title except "The Pragmatic Programmer" (skip it with continue, don't stop the loop). 
-            foreach (string book in books)
-            {
-                if (book == "the pragmatic programmer")
+            ////17-Using the same books array, print every title except "The Pragmatic Programmer" (skip it with continue, don't stop the loop). 
+            //foreach (string book in books)
+            //{
+            //    if (book == "the pragmatic programmer")
+            //    {
+            //        continue;
+            //    }
+            //    Console.WriteLine(book);
+            //}
+
+            #endregion
+
+            #region Queation18
+            //18-Write a method PrintFirstBook() that prints the first book in the books array. If the array is empty, use return to exit the method early instead of printing anything. 
+            string[] books = { "clean code", "the pragmatic programmer", "refactory" };
+            string[] emptyBooks = { };
+
+            PrintFirstBook(books);
+            PrintFirstBook(emptyBooks);
+
+            static void PrintFirstBook(string[] books) {
+                if (books == null || books.Length == 0)
                 {
-                    continue;
+                    return;
                 }
-                Console.WriteLine(book);
+                Console.WriteLine(books[0]);
             }
-            
             #endregion
         }
     }
